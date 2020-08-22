@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/todos.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <div id="main" class="card">
+            <div class="card-content">
+              <div class="card-title">To-do List</div>
+              <div class="row">
+                <form id="task-form">
+                  <div class="input-field col s12">
+                    <input
+                      type="text"
+                      name="task_input-field"
+                      id="task_input-field"
+                      placeholder="insert your task here"
+                    />
+                    <label for="task">New Task</label>
+                  </div>
+                  <input type="submit" value="Add" class="btn add-task-btn" />
+                  <button class="update-btn btn orange">
+                    <i class="fa fa-xs fa-pencil-square-o"></i>  Update
+                  </button>
+                  <button class="delete-btn btn red">
+                    <i class="fa fa-xs fa-remove"></i>  Delete
+                  </button>
+                  <button class="back-btn btn grey pull-right">
+                    <i class="fa fa-xs fa-chevron-circle-left"></i>  Back
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="card-action">
+              <h5 id="task-title">I need to..</h5>
+              <!-- <div class="input-field col s12">
+                <input type="text" name="filter" id="filter" />
+                <label for="filter">Filter</label>
+              </div> -->
+              <ul class="collection" id="listmenu"></ul>
+              <a href="#" class="clear-all-tasks btn black">Clear All</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/27405e77c4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/app.js"></script>
+  </body>
+</html>

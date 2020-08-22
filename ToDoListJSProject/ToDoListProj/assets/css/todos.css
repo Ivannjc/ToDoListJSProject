@@ -1,0 +1,19 @@
+body {
+  background: url('https://worlddogfinder.com/imager/1200x630/upload/shiba_inu_dog_breed.jpg');
+  background-repeat: no-repeat center center fixed;
+  position: relative;
+  background-color: #cccccc;
+  background-size: 100% 100vh;
+}
+
+.container {
+  margin: 120px auto;
+  opacity: 0.9;
+}
+
+/* button{
+    float: right;
+    opacity: 0.5;
+    margin-right: 10px;
+    border: none;
+} */
